@@ -6,7 +6,9 @@
   "icon": "command-icon.png",
   "author": "korchasa",
   "license": "MIT",
-  "categories": ["Productivity"],
+  "categories": [
+    "Productivity"
+  ],
   "commands": [
     {
       "name": "ask-chatgpt",
@@ -103,8 +105,11 @@
     "@raycast/api": "1.104.11"
   },
   "devDependencies": {
+    "@raycast/eslint-config": "^2.1.1",
     "@types/node": "22.13.10",
     "@types/react": "19.0.10",
+    "eslint": "^9.39.4",
+    "prettier": "^3.8.1",
     "typescript": "5.8.3"
   },
   "scripts": {

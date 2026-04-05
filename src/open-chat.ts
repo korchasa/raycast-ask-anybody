@@ -1,4 +1,11 @@
-import { open, closeMainWindow, popToRoot, showToast, Toast, LaunchProps } from "@raycast/api";
+import {
+  open,
+  closeMainWindow,
+  popToRoot,
+  showToast,
+  Toast,
+  LaunchProps,
+} from "@raycast/api";
 
 interface Arguments {
   query: string;
