@@ -1,18 +1,7 @@
-import {
-  open,
-  closeMainWindow,
-  popToRoot,
-  showToast,
-  Toast,
-  LaunchProps,
-} from "@raycast/api";
-
-interface Arguments {
-  query: string;
-}
+import { open, closeMainWindow, popToRoot, showToast, Toast, LaunchProps } from "@raycast/api";
 
 export async function openChat(
-  props: LaunchProps<{ arguments: Arguments }>,
+  props: LaunchProps<{ arguments: { query: string } }>,
   name: string,
   urlTemplate: (query: string) => string,
   application?: string,
