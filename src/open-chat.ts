@@ -15,10 +15,11 @@ export async function openChat(
   props: LaunchProps<{ arguments: Arguments }>,
   name: string,
   urlTemplate: (query: string) => string,
+  application?: string,
 ) {
   const { query } = props.arguments;
   try {
-    await open(urlTemplate(query));
+    await open(urlTemplate(query), application);
     await closeMainWindow();
     await popToRoot({ clearSearchBar: true });
   } catch (error) {

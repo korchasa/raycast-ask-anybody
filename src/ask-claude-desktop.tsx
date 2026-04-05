@@ -8,5 +8,6 @@ export default async function Command(
     props,
     "Claude",
     (q) => `claude://claude.ai/new?q=${encodeURIComponent(q)}`,
+    "com.anthropic.claudefordesktop",
   );
 }
